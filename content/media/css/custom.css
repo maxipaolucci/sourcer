@@ -4,3 +4,20 @@
   font-size: 35px;
   margin: 30px 0;
 }
+
+.tp-parallax-wrap {
+  left: 150px !important;
+}
+
+.about-content {
+  font-size: 20px !important;
+}
+
+#services .services_list {
+  text-align: center;
+  list-style: inside;
+}
+
+#services .services_list .services_list_item {
+  margin-bottom: 20px;
+}
