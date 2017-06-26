@@ -88,22 +88,12 @@
                     </div>
                 </div>
                 <!-- Revolution slider area-->
-                <div class="mfn-main-slider">
-                    <div id="rev_slider_1_2_wrapper" class="rev_slider_wrapper fullscreen-container" style="padding:0px;">
-                        <div id="rev_slider_1_2" class="rev_slider fullscreenbanner" data-version="5.0.4.1">
-                            <ul>
-                                <li data-index="rs-1" data-transition="slotfade-horizontal" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
-                                    <img src="content/media/images/home_media_slider.jpg" alt="" width="1920" height="1075" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                                    
-                                    <div class="tp-caption homemediamediumlight tp-resizeme about-content" id="slide-1-layer-2" data-x="20" data-y="bottom" data-voffset="190" data-width="auto" data-height="auto" data-transform_idle="" data-transform_in="x:50px;opacity:0;s:400;e:Power3.easeInOut;" data-transform_out="auto:auto;s:300;" data-start="700" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; min-width: auto; min-height: auto; white-space: nowrap; max-width: auto; max-height: auto; line-height: 28px; color: rgba(255, 255, 255, 1.00);font-family:Lato;border-color:rgba(0, 0, 0, 1.00);">
-                                        Sourcer is a human centered technology talent acquisition consultancy, with a focus on technical Software Development Life Cycle related roles based in Auckland.
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="tp-bannertimer tp-bottom flv_viz_hid"></div>
-                        </div>
-
+                <div class="main-section">
+                    <img src="content/media/images/home_media_slider.jpg" alt="Main background" />     
+                    <div class="main-section-content">
+                        Sourcer is a human centered technology talent acquisition consultancy, with a focus on technical Software Development Life Cycle related roles based in Auckland.
                     </div>
+                                
                 </div>
             </header>
         </div>
@@ -112,7 +102,7 @@
             <div class="content_wrapper clearfix">
                 <div class="sections_group">
                     <div class="entry-content">
-                        <div class="section" id="ourApproach" style="padding-top:80px; padding-bottom:40px; ">
+                        <div class="section" id="ourApproach" style="">
                             <div class="section_wrapper clearfix">
                                 <div class="items_group clearfix">
                                     <!-- One Sixth (1/6) Column -->
@@ -441,63 +431,6 @@
     <!--<script src="http://maps.google.com/maps/api/js?sensor=false&ver=5.9"></script>-->
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&ver=5.9&key=AIzaSyBdL1zIADPYEmT15mlE_ZNMIpIjW8XWKlo" type="text/javascript"></script>
     <script src="js/email.js"></script>
-
-    <script>
-        var tpj = jQuery;
-        tpj.noConflict();
-        var revapi1;
-        tpj(document).ready(function() {
-            if (tpj("#rev_slider_1_2").revolution == undefined) {
-                revslider_showDoubleJqueryError("#rev_slider_1_2");
-            } else {
-                revapi1 = tpj("#rev_slider_1_2").show().revolution({
-                    sliderType: "standard",
-                    sliderLayout: "fullscreen",
-                    dottedOverlay: "none",
-                    delay: 9000,
-                    navigation: {
-                        keyboardNavigation: "off",
-                        keyboard_direction: "horizontal",
-                        mouseScrollNavigation: "off",
-                        onHoverStop: "on",
-                        touch: {
-                            touchenabled: "on",
-                            swipe_threshold: 75,
-                            swipe_min_touches: 1,
-                            swipe_direction: "horizontal",
-                            drag_block_vertical: false
-                        }
-                    },
-                    gridwidth: 1176,
-                    gridheight: 900,
-                    lazyType: "none",
-                    shadow: 0,
-                    spinner: "sipnner3",
-                    stopLoop: "off",
-                    stopAfterLoops: -1,
-                    stopAtSlide: -1,
-                    shuffle: "off",
-                    autoHeight: "off",
-                    fullScreenAlignForce: "off",
-                    fullScreenOffsetContainer: "#Top_bar",
-                    fullScreenOffset: "",
-                    disableProgressBar: "on",
-                    hideThumbsOnMobile: "off",
-                    hideSliderAtLimit: 0,
-                    hideCaptionAtLimit: 0,
-                    hideAllCaptionAtLilmit: 0,
-                    startWithSlide: 0,
-                    debugMode: false,
-                    fallbacks: {
-                        simplifyAll: "off",
-                        nextSlideOnWindowFocus: "off",
-                        disableFocusListener: "off",
-                    }
-                });
-            }
-        });
-        /*]]>*/
-    </script>
 
     <script>
         function google_maps_563b4484c5a7a() {
