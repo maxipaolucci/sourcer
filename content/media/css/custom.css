@@ -1,8 +1,26 @@
 #Top_bar .logo {
   color: #00e2bf;
+  margin: 9px 0;
+}
+
+#Top_bar .logo .logo-img{
+  width: 72px;
+  float: left;
+}
+
+#Top_bar .logo .company-name{
+  float: left;
   font-weight: bold;
   font-size: 35px;
-  margin: 30px 0;
+  margin: 23px 0;
+}
+
+#Top_bar.is-sticky .logo .company-name{
+  margin: 15px 0;
+}
+
+#Top_bar.is-sticky .logo .logo-img{
+  width: 60px;
 }
 
 .main-section img {
@@ -45,6 +63,19 @@
   }
 }
 @media only screen and (max-width: 767px) {
+
+  #Top_bar .top_bar_left {
+    margin-top: 0;
+  }
+
+  #Top_bar .logo {
+    float: left;
+  }
+
+  #Header a.responsive-menu-toggle {
+    top: 24px !important;
+  }
+
 	.main-section img {
     height: 400px;
   }
@@ -59,7 +90,11 @@
   }
 }
 @media only screen and (max-width: 479px) {
-	.main-section img {
+	#Top_bar .logo .company-name{
+    font-size: 30px;
+  }
+  
+  .main-section img {
     height: 330px;
   }
 
