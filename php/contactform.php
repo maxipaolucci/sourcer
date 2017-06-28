@@ -6,7 +6,7 @@ error_reporting(0);
   
  // configuration
  
-$email_it_to = "your_own_email_address@some_domain.com";
+$email_it_to = "lucas@sourcer.co.nz";
 
 $error_message = "Please complete the form first";
 
@@ -26,10 +26,11 @@ if(!isset($rnd) || !isset($name) || !isset($email) || !isset($subject) || !isset
 $subject = stripslashes($subject);
 $email_from = $email;
 
-$email_message = "Message submitted by '".stripslashes($name)."', email:".$email_from;
-$email_message .=" on ".date("d/m/Y")."\n\n";
+$email_message = "Message submitted by '".stripslashes($name)."', email: ".$email_from;
+$email_message .=" on ".date("d/m/Y")."<br /><br />";
 $email_message .= stripslashes($body);
-$email_message .="\n\n";
+$email_message .="<br />";
+$email_message = str_replace("\n", "<br />", $email_message);
 
 // Always set content-type when sending HTML email
 
