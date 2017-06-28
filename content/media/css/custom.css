@@ -45,13 +45,13 @@
 }
 
 #services .services_list {
-  text-align: justify;
+  text-align: left;
   list-style: outside;
 }
 
 #services .services_list .services_list_item {
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 959px) {
